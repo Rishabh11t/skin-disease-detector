@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero-section-small text-white text-center">
+        <div class="container">
+            <h1 class="display-4">Skin Disease Detection</h1>
+            <p class="lead">
+                Upload an image of the affected skin area, and our AI will predict the possible disease.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card mx-auto p-4 shadow" style="max-width: 600px;">
+            <h3 class="text-center mb-4">Upload Your Image</h3>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="file" class="form-control-file" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Predict</button>
+                </div>
+            </form>
+        </div>
+
+        {% if prediction %}
+        <div class="mt-5 alert alert-info text-center shadow">
+            <h4>Prediction:</h4>
+            <p class="mb-0"><strong>{{ prediction }}</strong></p>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="/" class="btn btn-secondary btn-lg">Back to Home</a>
+    </div>
+</body>
+</html>

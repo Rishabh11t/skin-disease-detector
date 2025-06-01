@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Skin Disease Detector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Skin Disease Detector</h1>
+            <p class="lead">
+                Your health matters! Use our advanced Skin Disease Detector to detect common skin diseases with ease.
+            </p>
+            <a href="#details-section" class="btn btn-light btn-lg mt-4">Learn More</a>
+        </div>
+    </div>
+
+    <div id="details-section" class="container my-5">
+        <h2 class="text-center mb-4">What We Detect</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Eczema</h5>
+                        <p class="card-text">
+                            A chronic condition causing red, itchy, and inflamed skin. Often triggered by allergens or stress.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Melanoma</h5>
+                        <p class="card-text">
+                            A serious form of skin cancer. Early detection is key to effective treatment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Atopic Dermatitis</h5>
+                        <p class="card-text">
+                            A type of eczema often seen in children. Causes dry, itchy patches on the skin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Basal Cell Carcinoma</h5>
+                        <p class="card-text">
+                            A slow-growing type of skin cancer that appears as a waxy bump or scar-like lesion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Melanotic Nevi</h5>
+                        <p class="card-text">
+                            Commonly known as moles. Some moles may change and require attention to rule out melanoma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-5">
+        <a href="/detect" class="btn btn-primary btn-lg">Start Detection</a>
+    </div>
+</body>
+</html>

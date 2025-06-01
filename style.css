@@ -1,0 +1,114 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section with gradient background */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #3e6dc4, #6f97dd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Buttons */
+a.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a.btn:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Details section */
+#details-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Cards for skin disease details */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Start Detection button */
+.text-center .btn-primary {
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Small Hero Section for Detection Page */
+.hero-section-small {
+    height: 40vh;
+    background: linear-gradient(135deg, #3e6dc4, #6f97dd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Detection Form */
+.card {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form .btn {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form .btn:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Alert for Predictions */
+.alert {
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+
+.alert:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Back to Home */
+a.btn-secondary {
+    padding: 10px 30px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a.btn-secondary:hover {
+    background: #0056b3;
+    color: white;
+    transform: scale(1.05);
+}
